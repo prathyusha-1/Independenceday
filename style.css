@@ -1,0 +1,128 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1{
+    margin: 18% auto;
+    text-align: center;
+    font-size: 50px;
+    color: transparent;
+    -webkit-text-stroke: 1px #00ff88;
+    background: url(flag.png);
+    -webkit-background-clip: text;
+    background-position: 100px 0;
+    animation: image 20s linear infinite;
+}
+@keyframes image{
+    100%{
+        background-position: 2000px 0;
+    }
+}
+body{
+    padding:0;
+    margin:0;
+    background-color: black;
+    overflow: hidden;
+}
+.container{
+    height:390px;
+    width:390px;
+    position: absolute;
+    transform: translate(-50% , -50%);
+    left: 50%;
+    top: 62%;
+    clip-path: url(#map-path);
+}
+svg{
+    height: 0;
+    width: 0;
+}
+.color-green{
+    position: absolute;
+    width: 100%;
+    height: 29%;
+    left: 0;
+}
+.color-orange{
+    position:absolute ;
+    width: 100%;
+    height: 22%;
+    background-color: rgb(255, 102, 0);
+    left:0%;
+    margin-top: 17%;
+    animation: slide-right 6s;
+}
+@keyframes slide-right{
+    0%{
+        left:-100%
+    }
+}
+.color-white{
+    position:fixed ;
+    width: 100%;
+    height: 22%;
+    top:39%;
+    background-color: bisque;
+    right: 0;
+    animation: slide-left 6s;
+}
+@keyframes slide-left{
+    0%{
+        right:-100%
+    }
+}
+
+.color-green{
+    position:absolute ;
+    width: 100%;
+    height: 22%;
+    margin-top: 61%;
+    background-color: rgb(0, 128, 28);
+    left:0%;
+    animation: slide-right 6s;
+}
+@keyframes slide-right{
+    0%{
+        left:-100%
+    }
+}
+#ashoka-chakra{
+    height:120px;
+    width:120px;
+    position:absolute;
+    margin:auto;
+    left:-23px;
+    right:0;
+    top:0;
+    bottom:0;
+    animation:spin 3s 4.25 forwards;
+    transform:scale(0);
+
+}
+@keyframes spin {
+    80%{
+        transform: scale(1.6) rotate(360deg);
+    }
+    100%{
+        transform: scale(1) rotate(360deg);
+    }
+    
+}
+/* .h1{
+    background-color: black;
+    color: white;
+    animation: slide-right 6s;
+
+}
+@keyframes slide-right{
+    0%{
+        left:-100%
+    }
+} */
+
+
+
+
+
